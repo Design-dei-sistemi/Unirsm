@@ -1,0 +1,639 @@
+/** {
+    border: 1px solid blue;
+}*/
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'DomaineSansDisplay-ExtraboldItalic';
+    src: url('../fonts/DomaineSansDisplay-ExtraboldItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DomaineSansFine-Extrabold';
+    src: url('../fonts/DomaineSansFine-Extrabold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DomaineSansText-Light';
+    src: url('../fonts/DomaineSansText-Light.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DomaineSansText-Regular';
+    src: url('../fonts/DomaineSansText-Regular.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DomaineSansText-BlackItalic';
+    src: url('../fonts/DomaineSansText-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DomaineSansText-Black';
+    src: url('../fonts/DomaineSansText-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DomaineSansText-Medium';
+    src: url('../fonts/DomaineSansText-Medium.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    background-color: #FFEDDF;
+}
+
+h1 {
+    /*titoloni*/
+    font-family: 'DomaineSansFine-Extrabold';
+    font-size: 200px;
+    padding-top: 20px;
+}
+
+h2 {
+    /*statement strappi*/
+    font-size: 65px;
+    /*margin-bottom: -50px;*/
+    font-family: 'DomaineSansText-BlackItalic';
+}
+
+h3 {
+    font-family: "DomaineSansText-Medium";
+    font-size: 22px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h4 {
+    /*sezioni frasi importanti*/
+    font-family: "DomaineSansText-Medium";
+    font-size: 36px;
+    z-index: 10;
+    text-align: center;
+    padding-top: 65px;
+}
+
+p {
+    /*paragrafi*/
+    font-family: 'DomaineSansText-Light';
+    font-size: 18px;
+    z-index: 99;
+    padding-top: 50px;
+}
+
+strong {
+    color: #EF4647;
+    /*rosa scuro*/
+}
+
+.paddingcol {
+    padding: 0 10% 0 10%;
+    max-width: 630px;
+    margin: auto;
+}
+
+#mano1 {
+    position: absolute;
+    z-index: 2;
+    max-width: 750px;
+    top: 10px;
+    mix-blend-mode: multiply;
+    padding-left: 200px;
+}
+
+#mano2 {
+    position: absolute;
+    z-index: 3;
+    max-width: 700px;
+    padding-left: 300px;
+    mix-blend-mode: multiply;
+}
+
+#mano3 {
+    position: absolute;
+    z-index: 4;
+    max-width: 750px;
+    right: 10%;
+    mix-blend-mode: multiply;
+    margin-top: -250px;
+}
+
+#mano4 {
+    position: absolute;
+    z-index: 4;
+    max-width: 700px;
+    right: 10%;
+    mix-blend-mode: multiply;
+
+}
+
+#header {
+    height: 130vh;
+    background-color: #FFEDDF;
+    /*rosa chiaro*/
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    font-family: 'DomaineSansText-BlackItalic';
+    color: #0E0F26;
+    /*blu navy*/
+}
+
+#header h2 {
+    margin-bottom: -50px;
+}
+
+#header #scroll {
+    position: relative;
+    top: 250px;
+    left: 0;
+    opacity: 1;
+}
+
+
+
+#intro {
+    height: 105vh;
+    background-color: #FFEDDF;
+    /*rosa chiaro*/
+    background-repeat: no-repeat;
+    color: #0E0F26;
+    /*blu navy*/
+    position: relative;
+    z-index: 0;
+    /*padding-top: 80px;*/
+}
+
+#intro p {
+    padding-top: 20x;
+}
+
+#statement {
+    height: 40vh;
+    /*position: relative;*/
+    z-index: 2;
+    /*background-color: #0E0F26; /*blu navy*/
+    color: #FFEDDF;
+    /*rosa scuro*/
+    font-family: "DomaineSansText-Medium";
+    text-align: center;
+    background-color: #0E0F26;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#statementobiezione {
+    height: 40vh;
+    /*position: relative;*/
+    z-index: 2;
+    /*background-color: #0E0F26; /*blu navy*/
+    color: #FFEDDF;
+    /*rosa scuro*/
+    font-family: "DomaineSansText-Medium";
+    text-align: center;
+    background-color: #0E0F26;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#statement strong {
+    color: #F2AF25;
+    /*giallo scuro*/
+}
+
+#strapposopra {
+    position: relative;
+    height: 110px;
+    background-image: url("../images/strapposopra.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    background-color: #0E0F26;
+    margin-top: 70px;
+}
+
+#strapposotto {
+    position: relative;
+    height: 180px;
+    background-image: url("../images/strapposotto.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    top: -56px;
+}
+
+#mano2sez2 {
+    position: absolute;
+    z-index: 5;
+    max-width: 600px;
+    padding-left: 300px;
+}
+
+
+#strapposopra2 {
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    background-color: #0E0F26;
+    background-image: url("../images/strapposopra.svg");
+}
+
+#statement2 {
+    position: relative;
+    height: 40vh;
+    z-index: 2;
+    color: #FFEDDF;
+    /*rosa scuro*/
+    font-family: "DomaineSansText-Medium";
+    text-align: center;
+    background-color: #0E0F26;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#contestostorico{
+    margin-top: -80px;
+}
+#fadein {
+    position: relative;
+}
+
+.mano2sez2 {
+    position: relative;
+    left: -1300px;
+}
+
+img.mano2sez2 {
+    position: relative;
+    left: -1000px;
+}
+
+#parole {
+
+    height: 96vh;
+    background-color: #0E0F26;
+    color: #FFEDDF;
+    /*rosa chiaro*/
+    /*padding-top: 50px;*/
+}
+
+#parole h4 {
+    padding: 20px;
+    text-align: center;
+    color: #EF4647;
+    /*rosa scuro*/
+}
+
+#strapposopra3 {
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    background-color: #FFEDDF;
+    background-image: url("../images/strapposoprablu.svg");
+}
+
+#sezione3 h2 {
+    padding-top: 80px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#manostatement3 {
+    position: absolute;
+    z-index: 4;
+    max-width: 750px;
+  /*  right: 10%;*/
+    /*mix-blend-mode: multiply;*/
+    margin-top: 400px;
+    padding-left: 500px;
+}
+
+#graficoeuropa {
+    position: relative;
+    height: 55vh;
+    align-items: center;
+    padding-top: 80px;
+    padding: 50px;
+}
+.fonti{
+    font-size: 12px;
+}
+ #graficoeu /*immagine*/{
+    max-width: 100%;
+ }
+#sezione3 {
+    /* padding-top: 80px;*/
+}
+.manoeuropa {
+    position: relative;
+    left: 2000px;
+}
+
+#graficocalo {
+    height: 70vh;
+    align-items: center;
+    padding-top: 100px;
+    text-align: center;
+}
+#counter{
+    position: absolute;
+    padding-left: 45%;
+    text-align: center;
+
+}
+#manostatement4 {
+    position: absolute;
+    z-index: 5;
+    max-width: 750px;
+    left: 20%;
+    /*mix-blend-mode: multiply;*/
+}
+
+#obiezione h4 {
+    padding-top: 0px;
+}
+
+#obiezione p {
+    padding-top: 60px;
+}
+
+#perche1 {
+    height: 27vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    background-color: #0E0F26;
+    background-image: url("../images/perche1.svg");
+}
+
+#perche2 {
+    position: relative;
+    height: 172px;
+    background-image: url("../images/perche2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    background-color: #0E0F26;
+    /*rosa scuro*/
+}
+
+#xk {
+    position: relative;
+}
+
+#statement4 {
+    height: 30vh;
+    z-index: 2;
+    color: #FFEDDF;
+    font-family: "DomaineSansText-Medium";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #0E0F26;
+}
+
+#manostat4 {
+    position: absolute;
+    z-index: 5;
+    max-width: 750px;
+    left: 20%;
+    /* mix-blend-mode: multiply;*/
+}
+
+#manostorie3 {
+    position: absolute;
+    z-index: 4;
+    max-width: 750px;
+    right: 10%;
+
+}
+
+#manoemilia {
+    position: absolute;
+    z-index: 4;
+    max-width: 750px;
+    right: 10%;
+    mix-blend-mode: multiply;
+}
+
+#manoemilia2 {
+    position: absolute;
+    z-index: 4;
+    max-width: 750px;
+    right: 10%;
+    mix-blend-mode: multiply;
+}
+
+#manotante {
+    position: absolute;
+    z-index: 4;
+    max-width: 750px;
+    right: 10%;
+    mix-blend-mode: multiply;
+}
+
+#manou {
+    position: absolute;
+    z-index: 3;
+    max-width: 400px;
+    /* padding-left: 300px;*/
+    mix-blend-mode: multiply;
+}
+
+#manoqu2 {
+    position: relative;
+    z-index: 4;
+    max-width: 400px;
+    right: 10%;
+    mix-blend-mode: multiply;
+}
+
+#txt3 {
+    position: relative;
+}
+
+#test {
+    position: relative;
+}
+
+#entry {
+    position: relative;
+}
+
+#regioni {
+    margin-bottom: 60px;
+    padding-top: 60px;
+}
+
+#migrob {
+    margin-left: 116px;
+}
+
+#regioni2 h4 {
+  padding-top: 0px;
+}
+
+#graficoobiezioni {
+    height: 90vh;
+    align-items: center;
+}
+#graficoobiezioni p{
+     padding-top: 100px;
+ }
+
+#storie1 {
+    height: 44vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    background-color: #0E0F26;
+    background-image: url("../images/tipo1.svg");
+}
+
+#storie2 {
+    position: relative;
+    height: 172px;
+    background-image: url("../images/tipo2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    background-color: #0E0F26;
+}
+
+#storiestat {
+    height: 30vh;
+    z-index: 2;
+    color: #FFEDDF;
+    /*rosa chiaro*/
+    font-family: "DomaineSansText-Medium";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #0E0F26;
+}
+
+#testimonianze {
+    /*padding-top: 50px;*/
+}
+
+#testimonianzeemila h3 {
+    font-size: 22px;
+    text-align: left;
+}
+
+#manoemilia {
+    left: 10%;
+    mix-blend-mode: multiply;
+}
+
+#manoemilia2 {
+    mix-blend-mode: multiply;
+}
+
+#manoeq1 {
+    position: absolute;
+    z-index: 3;
+    max-width: 650px;
+    padding-left: 50px;
+    mix-blend-mode: multiply;
+}
+
+#manoeq2 {
+    position: absolute;
+    z-index: 3;
+    max-width: 700px;
+    padding-right: 200px;
+    margin-top: -600px;
+    margin-left: 900px;
+    mix-blend-mode: multiply;
+}
+
+#paragrafotante {
+    padding-top: 70px;
+}
+
+#tante1 {
+    height: 27vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    background-color: #0E0F26;
+    /*rosa scuro*/
+    background-image: url("../images/perche1.svg");
+}
+
+#tante2 {
+    position: relative;
+    height: 172px;
+    background-image: url("../images/perche2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    background-color: #0E0F26;
+    /*rosa scuro*/
+}
+
+#tantestat {
+    height: 30vh;
+    z-index: 2;
+    color: #FFEDDF;
+    font-family: "DomaineSansText-Medium";
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #0E0F26;
+    /*rosa scuro*/
+}
+
+
+
+#dignita1 {
+    height: 41vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 3;
+    background-color: #0E0F26;
+    /*rosa scuro*/
+    background-image: url("../images/tipo1.svg");
+    z-index: 20;
+}
+
+#dignitastat {
+    height: 90vh;
+    z-index: 2;
+    color: #FFEDDF;
+    font-family: "DomaineSansText-Medium";
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #0E0F26;
+    /*rosa scuro*/
+}
+.make_rosa{
+    background-color: #FFEDDF;
+    color:  #0E0F26;
+}

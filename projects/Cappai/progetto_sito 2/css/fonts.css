@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GTAmerica-Medium.woff2') format('woff2'),
+        url('../fonts/GTAmerica-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noe Display';
+    src: url('../fonts/NoeDisplay-Black.woff2') format('woff2'),
+        url('../fonts/NoeDisplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noe Display';
+    src: url('../fonts/NoeDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/NoeDisplay-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GTAmerica-Light.woff2') format('woff2'),
+        url('../fonts/GTAmerica-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src:
+    url('../fonts/GTAmericaMono-Regular.woff2') format('woff2'),
+        url('../fonts/GTAmericaMono-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GTAmerica-LightItalic.woff2') format('woff2'),
+        url('../fonts/GTAmerica-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}

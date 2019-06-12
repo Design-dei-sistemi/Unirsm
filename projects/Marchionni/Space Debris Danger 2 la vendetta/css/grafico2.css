@@ -1,0 +1,95 @@
+.titoloDebrisLine{
+    margin-top: 18vh;
+    text-align: center;
+    z-index: 100;
+    width:100%;
+    color: white;
+
+}
+
+.box{
+
+  z-index: 100;
+  text-align: center;
+  color: white;
+  width:100%;
+
+
+
+/*  background-color: rgba(40, 204, 174, .4); */
+}
+
+#oggetto1{ height: 230px;
+  width:100%;
+  position: relative;
+
+  margin-top: 40%;
+  margin-bottom: -80%;
+  opacity: .7;
+}
+
+
+#oggetto2{ height: 230px;
+  width:100%;
+  position: relative;
+
+  margin-top: 30%;
+margin-bottom: -70%;
+  opacity: .7;
+}
+
+
+
+#oggetto3{ height: 230px;
+  width:100%;
+  position: relative;
+
+  margin-top: 10%;
+  margin-bottom: -50%;
+    opacity: .7;
+}
+
+
+
+#debrisText{
+transform: scale(-1, 1);
+position: absolute;
+top: -60px;
+
+width:49%;
+left:26.5%;
+}
+
+#debrisText h4{
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+#debrisText hr{
+margin-bottom: 0rem;
+}
+
+#debrisText h5{
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "IBM Plex Mono";
+  font-size: 1.6rem;
+  margin-top: .3rem;
+  text-align:justify;
+  text-align-last: justify;
+}
+
+#debrisText ul{
+      list-style-type: none;
+  font-family: "IBM Plex Mono";
+  font-size: 1.2rem;
+  spacing: .8rem;
+}
+
+#debrisText li{
+      list-style-type: none;
+      font-family: "IBM Plex Mono";
+  text-transform: none;
+}

@@ -1,0 +1,23 @@
+      // init controller
+      var controller = new ScrollMagic.Controller();
+      //funzione che assegna agli stroke l'effetto tratteggio
+      //in cui sia il dash che il gap hanno la lunghezza dello stroke stesso
+      function pathPrepare($el) {
+        var lineLength = $el[0].getTotalLength();
+        $el.css("stroke-dasharray", lineLength);
+        $el.css("stroke-dashoffset", lineLength);
+      }
+      ///////////////////////////////////////////////
+      //creo ikl tween per la travolta
+      var tween = TweenMax.from("#travolta", 1.5, {
+        css: {
+          left: "1000px",
+          transform: "rotate(445deg)"
+        }
+      });
+      new ScrollMagic.Scene({
+        triggerElement: "#intro",
+        triggerOffset: 600,
+        //triggerHook: "onLeave",
+        duration: 200
+      }).setTween(tween).addTo(controller);

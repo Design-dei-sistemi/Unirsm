@@ -1,0 +1,222 @@
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-family: Noe Display;
+  font-weight: 900;
+}
+
+h2 {
+  font-family: Noe Display;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: GT America;
+  font-weight: 300;
+  font-size: 1.3vw;
+  color: var(--bianco);
+  margin-top: 5vw;
+}
+
+#primobox {
+  display: flex;
+  width: 100%;
+  background-color: #a00000;
+}
+
+#secondobox {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  background-color: var(--rosso_scuro);
+}
+
+#immagine_prima {
+  width: 100%;
+  margin-top: 0px;
+  height: 450px;
+}
+
+#graf1 {
+  width: 100%;
+  margin-top: 0px;
+}
+
+#graf2 {
+  width: 100%;
+  margin-top: 0px;
+  margin-left: -90px
+}
+
+#tuttoschermo {
+  width: 100%;
+  margin-top: 12vw;
+}
+
+#primobox h2 {
+  color: var(--rosso_scuro);
+  line-height: 3vw;
+  text-align: left;
+  margin-top: 5vw;
+}
+
+#terzobox {
+  background-color: var(--rosso_scuro);
+}
+
+#quintobox h2 {
+  color: var(--rosso_chiaro);
+  line-height: 3vw;
+  text-align: left;
+  margin-top: -20vw;
+}
+
+#quintobox h4{
+    font-family: GT America;
+    font-weight: 300;
+    font-size: 1.3vw;
+    color: var(--bianco);
+    margin-top: -20vw;
+}
+
+#graf3{
+  margin-top: 5vw;
+  width: 100%;
+}
+
+#terzobox h2 {
+  color: var(--bianco);
+  line-height: 3vw;
+  text-align: left;
+  margin-top: 5vw;
+}
+
+#terzobox h4 {
+  margin-top: 5vw;
+}
+
+#quartobox {
+  margin-top: 10vw;
+  background-color: var(--rosso_scuro);
+}
+
+#quartobox h2 {
+  color: #a00000;
+  margin-top: 6vw;
+  line-height: 3vw;
+  text-align: left;
+}
+
+.gradiente_interr {
+  background: #a00000;
+  background: -moz-linear-gradient(top, #a00000 0%, #1e0000 51%, #1e0000 58%, #1e0000 58%);
+  background: -webkit-linear-gradient(top, #a00000 0%, #1e0000 51%, #1e0000 58%, #1e0000 58%);
+  background: linear-gradient(to bottom, #a00000 0%, #1e0000 51%, #1e0000 58%, #1e0000 58%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a00000', endColorstr='#1e0000', GradientType=0);
+  padding-top: 400px;
+}
+
+.header {
+  display: flex;
+  height: 98vh;
+  width: 100%;
+  align-items: center;
+
+}
+
+.header h1 {
+  color: var(--bianco);
+  font-size: 9vw;
+  line-height: 6.6vw;
+  letter-spacing: 0;
+}
+
+.sepa{
+  background-image: url("https://i.imgur.com/pFh6WUG.jpg");
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20vw;
+  background-size:cover;
+  height: 60vh;
+}
+
+.sepa h1{
+  color: var(--bianco);
+  font-size: 6vw;
+  line-height: 4.4vw;
+  letter-spacing: 0;
+}
+
+.nomargin {
+  margin-left: 0px;
+}
+
+.backrosso {
+  background-color: #a00000;
+}
+
+.backrossoscuro {
+  background-color: var(--rosso_scuro);
+}
+
+#postgraf {
+  margin-top: 7vw;
+}
+
+#postgraf h2 {
+  color: #a00000;
+  line-height: 3vw;
+  text-align: left;
+}
+
+#postgraf h4 {
+  margin-top: -5vw;
+  text-align: left;
+}
+
+#block2 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 98vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tooltip{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 222;
+  background-color: var(--rosso_scuro);
+}
+
+.spesa{
+  font-family: GT America;
+  color: #a00000;
+  font-weight: 500;
+  font-size: 1vw;
+  padding-right: 5px;
+}
+
+.paese_tab{
+  font-family: GT America;
+  color: var(--bianco);
+  padding-left: 5px;
+  font-weight: 500;
+  font-size: 1vw;
+}
+
+
+#secondo_grafico{
+  width: 108%;
+  margin-left: -106px;
+}

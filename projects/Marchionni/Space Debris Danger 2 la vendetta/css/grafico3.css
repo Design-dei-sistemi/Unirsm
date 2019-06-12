@@ -1,0 +1,33 @@
+#DATE{
+  font-family: "GT America Compressed Ultra";
+}
+
+#TERRA2{
+  height:100%
+  overflow: visible;
+}
+
+.didasBlock{
+    display: none;
+}
+
+.didas1{
+  font-family: "GT America Compressed Ultra";
+}
+
+.didas2{
+  font-family: "IBM Plex Mono"
+}
+
+.impact{
+  opacity: .6;
+  stroke: #ffffff;
+  stroke-width: 0px;
+}
+
+.impact:hover{
+  transition: .5s;
+  opacity:1;
+  stroke: #ffffff;
+  stroke-width: 1px;
+}
