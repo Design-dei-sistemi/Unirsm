@@ -1,20 +1,30 @@
 <div id="magic-footer">
     <style>
+        @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
         #magic-footer {
-            width: 100% background-color: #400DB2;
+            width: 100%;
+            background-color: #400DB2;
             padding: 60px 20px 60px 20px;
             border-top: 1px solid #ffd320;
+            position: fixed;
+            bottom: 0;
+            z-index: -100;
         }
 
         #magic-footer h4 {
             max-width: 800px;
-
             margin: auto;
-
             color: #ffd320;
             font-size: 16px;
             text-align: center;
             letter-spacing: 0;
+            font-family: 'IBM Plex Sans', sans-serif;
         }
 
         #magic-footer a {
