@@ -3,8 +3,21 @@
 }*/
 
 body {
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
+    background-color: #FFEDDF;
+}
+
+html {
+    width: 100%;
+}
+
+#sori {
+    display: none;
+}
+
+#conten {
+    width: 100%;
 }
 
 @font-face {
@@ -56,15 +69,14 @@ body {
     font-style: normal;
 }
 
-body {
-    background-color: #FFEDDF;
-}
+
 
 h1 {
     /*titoloni*/
     font-family: 'DomaineSansFine-Extrabold';
-    font-size: 200px;
+    font-size: 220px;
     padding-top: 20px;
+    margin-left: -80px;
 }
 
 h2 {
@@ -109,20 +121,25 @@ strong {
     margin: auto;
 }
 
+#move {
+    position: relative;
+
+}
+
 #mano1 {
     position: absolute;
     z-index: 2;
     max-width: 750px;
     top: 10px;
     mix-blend-mode: multiply;
-    padding-left: 200px;
+    padding-left: 150px;
 }
 
 #mano2 {
     position: absolute;
     z-index: 3;
     max-width: 700px;
-    padding-left: 300px;
+    padding-left: 150px;
     mix-blend-mode: multiply;
 }
 
@@ -132,7 +149,7 @@ strong {
     max-width: 750px;
     right: 10%;
     mix-blend-mode: multiply;
-    margin-top: -250px;
+    margin-top: -200px;
 }
 
 #mano4 {
@@ -145,7 +162,7 @@ strong {
 }
 
 #header {
-    height: 130vh;
+    height: 100vh;
     background-color: #FFEDDF;
     /*rosa chiaro*/
     display: flex;
@@ -156,11 +173,20 @@ strong {
     font-family: 'DomaineSansText-BlackItalic';
     color: #0E0F26;
     /*blu navy*/
+    margin: 0 !important;
 }
 
+/*.scrollmagic-pin-spacer {
+    margin: 0 !important;
+}*/
+
+#header h1,
 #header h2 {
-    margin-bottom: -50px;
+    width: 100%;
+    margin: 0;
 }
+
+
 
 #header #scroll {
     position: relative;
@@ -201,6 +227,7 @@ strong {
     align-items: center;
     width: 100%;
 }
+
 #statementobiezione {
     height: 40vh;
     /*position: relative;*/
@@ -215,6 +242,7 @@ strong {
     align-items: center;
     width: 100%;
 }
+
 #statement strong {
     color: #F2AF25;
     /*giallo scuro*/
@@ -250,7 +278,7 @@ strong {
 
 
 #strapposopra2 {
-    height: 120px;
+    height: 123px;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 3;
@@ -260,7 +288,7 @@ strong {
 
 #statement2 {
     position: relative;
-    height: 40vh;
+    height: 42vh;
     z-index: 2;
     color: #FFEDDF;
     /*rosa scuro*/
@@ -271,9 +299,11 @@ strong {
     align-items: center;
     width: 100%;
 }
-#contestostorico{
-    margin-top: -80px;
+
+#contestostorico {
+    margin-top: -118px;
 }
+
 #fadein {
     position: relative;
 }
@@ -323,8 +353,6 @@ img.mano2sez2 {
     position: absolute;
     z-index: 4;
     max-width: 750px;
-  /*  right: 10%;*/
-    /*mix-blend-mode: multiply;*/
     margin-top: 400px;
     padding-left: 500px;
 }
@@ -336,38 +364,68 @@ img.mano2sez2 {
     padding-top: 80px;
     padding: 50px;
 }
-.fonti{
+
+.fonti {
     font-size: 12px;
 }
- #graficoeu /*immagine*/{
+
+#graficoeu {
     max-width: 100%;
- }
-#sezione3 {
-    /* padding-top: 80px;*/
 }
+
+
+
 .manoeuropa {
     position: relative;
     left: 2000px;
 }
 
 #graficocalo {
-    height: 70vh;
+    height: 73vh;
     align-items: center;
     padding-top: 100px;
     text-align: center;
 }
-#counter{
-    position: absolute;
-    padding-left: 45%;
-    text-align: center;
+
+#graficocalo img {
+    width: 100%;
+}
+
+#indicator h2 {
+    font-size: 26px;
+    text-align: left;
+    color: #EF4647;
 
 }
+
+#indicator h4 {
+    font-size: 24px;
+    text-align: left;
+    padding-top: 0;
+}
+
+
+#copertura {
+    width: 100vw;
+    height: 463px;
+    background-color: rgba(255, 237, 223, 1);
+    position: relative;
+    top: -463px;
+    margin-bottom: -463px;
+    left: 0px;
+}
+
+#indicator {
+    position: relative;
+    left: 0;
+    width: 200px;
+}
+
 #manostatement4 {
     position: absolute;
     z-index: 5;
     max-width: 750px;
     left: 20%;
-    /*mix-blend-mode: multiply;*/
 }
 
 #obiezione h4 {
@@ -419,7 +477,6 @@ img.mano2sez2 {
     z-index: 5;
     max-width: 750px;
     left: 20%;
-    /* mix-blend-mode: multiply;*/
 }
 
 #manostorie3 {
@@ -458,7 +515,6 @@ img.mano2sez2 {
     position: absolute;
     z-index: 3;
     max-width: 400px;
-    /* padding-left: 300px;*/
     mix-blend-mode: multiply;
 }
 
@@ -492,16 +548,17 @@ img.mano2sez2 {
 }
 
 #regioni2 h4 {
-  padding-top: 0px;
+    padding-top: 0px;
 }
 
 #graficoobiezioni {
     height: 90vh;
     align-items: center;
 }
-#graficoobiezioni p{
-     padding-top: 100px;
- }
+
+#graficoobiezioni p {
+    padding-top: 100px;
+}
 
 #storie1 {
     height: 44vh;
@@ -535,10 +592,6 @@ img.mano2sez2 {
     background-color: #0E0F26;
 }
 
-#testimonianze {
-    /*padding-top: 50px;*/
-}
-
 #testimonianzeemila h3 {
     font-size: 22px;
     text-align: left;
@@ -555,20 +608,32 @@ img.mano2sez2 {
 
 #manoeq1 {
     position: absolute;
+    top: 0;
     z-index: 3;
     max-width: 650px;
-    padding-left: 50px;
+    left: -200px;
     mix-blend-mode: multiply;
 }
 
 #manoeq2 {
     position: absolute;
+    top: 0;
     z-index: 3;
     max-width: 700px;
-    padding-right: 200px;
-    margin-top: -600px;
-    margin-left: 900px;
+    left: 500px;
     mix-blend-mode: multiply;
+}
+
+
+#equilibrio {
+    position: relative;
+    padding: 0% 0% 20% 20%;
+}
+
+#equilibrio #text {
+    position: absolute;
+    top: 0;
+
 }
 
 #paragrafotante {
@@ -620,20 +685,66 @@ img.mano2sez2 {
     /*rosa scuro*/
     background-image: url("../images/tipo1.svg");
     z-index: 20;
+    margin-top: 700px;
 }
 
 #dignitastat {
-    height: 90vh;
+    height: 140vh;
     z-index: 2;
     color: #FFEDDF;
     font-family: "DomaineSansText-Medium";
     display: flex;
     align-items: center;
     width: 100%;
-    background-color: #0E0F26;
+    background-color: #0E0F26FF;
     /*rosa scuro*/
 }
-.make_rosa{
+
+.make_rosa {
     background-color: #FFEDDF;
-    color:  #0E0F26;
+    color: #0E0F26;
+}
+
+#reveal-elements {
+    padding: 0 0% 0 10%;
+}
+
+/*.move {
+    position: relative;
+}
+*/
+
+#magic-footer {
+    width: 100%;
+    background-color: #FFEDDF;
+    padding: 60px 20px 60px 20px;
+    border-top: 1px solid #ffd320;
+}
+
+#magic-footer h4 {
+    max-width: 800px;
+    margin: auto;
+    color: #ffd320;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0;
+}
+
+#magic-footer a {
+    color: #ffd320;
+    font-size: 16px;
+}
+
+#magic-footer a:hover {
+    color: white;
+}
+
+#slidertest h4 {
+    font-size: 26px;
+    padding: 0 50px 0;
+}
+
+#graficoobiezioni .fonti {
+    padding: 0 27% 10% 7%;
+    margin-left: 0px;
 }

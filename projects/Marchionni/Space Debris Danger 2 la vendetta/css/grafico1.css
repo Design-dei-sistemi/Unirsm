@@ -1,0 +1,109 @@
+#PAESE{
+  display: none;
+
+}
+
+#PROPRIETA{
+  display: none;
+
+}
+
+#UTILIZZO{
+display: inline;
+
+}
+
+
+
+.tUtilizzo{
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: overline solid;
+
+}
+
+.tProprieta{
+  font-weight: 300;
+  color: #b7bee0;
+    text-decoration: none;
+}
+
+.tPaese{
+  font-weight: 300;
+  color: #b7bee0;
+    text-decoration: none;
+}
+
+
+.spicchio{
+  opacity: .7;
+  transition: 0.3s;
+}
+
+.spicchio:hover{
+  opacity: 1;
+}
+
+#altezza{}
+
+  .didGrande {
+  	font-family: "GT America Compressed Ultra";
+  }
+
+  .didPiccola {
+
+  	font-family: "Space Mono";
+  }
+
+#pulsante{
+    fill: #ffffff;
+    font-family: "GT America Compressed Ultra";
+    font-size: 3rem;
+    font-weight: 200;
+    user-select: none;
+  }
+
+
+
+.pulsanteUtilizzo{
+fill: white;
+transition: 1s;
+}
+
+.pulsanteUtilizzo:hover{
+  fill: #00ffbf;
+  text-decoration: underline solid;
+}
+
+.pulsanteProprieta{
+fill: white;
+transition: 1s;
+}
+
+.pulsanteProprieta:hover{
+  fill: #87c3ff;
+  text-decoration: underline solid
+}
+
+.pulsantePaese{
+fill: white;
+transition: 1s;
+}
+
+.pulsantePaese:hover{
+  fill: #b67cff;
+  text-decoration: underline solid
+}
+
+.selectedUtilizzo{
+  fill: #00ffbf;
+
+}
+
+.selectedProprieta{
+  fill: #87c3ff;
+}
+
+.selectedPaese{
+  fill: #b67cff;
+}
