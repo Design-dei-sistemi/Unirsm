@@ -83,6 +83,7 @@ a:hover {
 #logos {
     margin-top: 4rem;
     border-top: 1px solid #ffd320;
+    text-align: center;
 }
 
 #logos img {
@@ -92,15 +93,35 @@ a:hover {
 }
 
 /* Larger than mobile */
-@media (min-width: 400px) {
-    .mano2d2 {}
+@media (min-width: 320px) {
+    body {
+        margin: 0 5% 0 5%;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+
+
+    #logos img {
+        width: 290px;
+    }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+    h1 {
+        font-size: 6.7rem;
+    }
+}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
