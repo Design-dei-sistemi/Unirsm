@@ -2,19 +2,14 @@ var controller = new ScrollMagic.Controller();
 
 
 ///pin del titolo
-//UPDATE > il pinning parte subito, non appena header inizia ad uscire dal browser
-// e dura 300px... poi vedi tu se aumentarne la durata
-//ho aggiunto in simukltanea anche un fade sulle mani, qui sotto
-//che poi viene associato alla riga 23
 var tween = TweenMax.to("#header .mani", 2.0, {
     css: {
         opacity: 0
     }
 });
-
 var pinIntroScene = new ScrollMagic.Scene({
-        triggerElement: "#intro",
-        triggerHook: "onEnter",
+        triggerElement: "#header",
+        triggerHook:"onLeave",
         duration: "900"
     })
     .setPin("#scroll")
@@ -29,6 +24,7 @@ var tween1 = TweenMax.to("#mano1", 1.0, {
         top: "-450px"
     }
 });
+
 new ScrollMagic.Scene({
     triggerElement: "#header",
     triggerHook: "onLeave",
@@ -82,9 +78,9 @@ var tween5 = TweenMax.from("#statement", 1.5, {
     }
 });
 new ScrollMagic.Scene({
-    triggerElement: "#paragrafo",
-    triggerHook: "onEnter",
-    offset: 700,
+    triggerElement: "#trigger-strappo",
+    triggerHook: "onLeave",
+    offset: 200,
     duration: 400
 }).setTween(tween5).addTo(controller);
 
@@ -256,36 +252,37 @@ var tweenCopertura = new TimelineMax().add(TweenMax.to("#copertura", 1.5, {
 
 
 new ScrollMagic.Scene({
-        triggerElement: "#trig",
-        duration: 700,
-        offset: 200,
-        triggerHook: "onLeave"
-    }).setTween(tweenCopertura)
-    .addTo(controller);
+    triggerElement: "#trig",
+    duration: 700,
+    offset: 200,
+    triggerHook: "onEnter"
+}).setTween(tweenCopertura)
+.addTo(controller);
 ///////////////////////////////////////////
 ///////////////////////////////////////////////
 //
 years = ["1982", "1983", "1985", "1987", "1989", "1991", "1993", "1995", "1997", "1999", "2001", "2003", "2005", "2007", "2009", "2011", "2012", "2013", "2014", "2015", "2016", "2017"];
 values = ["17,2", "16,9", "14,9", "13,3", "11,80", "11", "10,50", "9,70", "9,80", "9,90", "9,50", "9,60", "9,60", "9,10", "8,50", "8", "7,90", "7,60", "7,10", "6,60", "6,50", "6,20"];
 opacity = ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "0.9", "0.80", "0.7", "0.5", "0.3", "0"];
-padding = ["1%", "2%", "3%", "4%", "5%", "6%", "7%", "8%", "9%", "10%", "11%", "12%", "13%", "14%", "15%", "16%", "17%", "18%", "19%", "20%", "21%", "22%", "23%"];
+height = ["100%", "100%", "90%", "70%","60%","60%","60%"];
+padding = ["0%", "3%", "8%", "10%", "11%", "13%", "14%", "15%", "16%", "18%", "18%", "20%", "21%", "21%", "22%", "23%", "24%", "24%", "25%", "26%", "28%", "28%", "28%"];
 new ScrollMagic.Scene({
         triggerElement: "#trig",
         duration: 700,
-        offset: 200,
-        triggerHook: "onLeave"
+        offset: 500,
+        triggerHook: "onEnter"
     }).setTween(tweenCopertura)
     .addTo(controller)
     .on("progress", function (e) {
         offset = Math.floor(years.length / 90 * e.progress.toFixed(3) * 100);
-        //padding = Math.floor(15 / 90 * e.progress.toFixed(3) * 100);
+       // padding = Math.floor(15 / 90 * e.progress.toFixed(3) * 100);
         //console.log(offset);
 
         $("#copertura").css("padding-top", padding[offset]);
         $("#copertura h4").html(years[offset]);
         $("#copertura h2").html(values[offset]);
         $("#copertura").css("background-color", "rgba(255, 237, 223," + opacity[offset] + " )");
-
+        $("#copertura").css("height", height[offset]);
     });
 
 //////////////////////////////////////// 

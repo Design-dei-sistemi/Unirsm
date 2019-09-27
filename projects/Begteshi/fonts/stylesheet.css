@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'GT America Trial Cm Bd';
+    src: url('GTAmericaTrial-CompressedBold.eot');
+    src: url('GTAmericaTrial-CompressedBold.eot?#iefix') format('embedded-opentype'),
+        url('GTAmericaTrial-CompressedBold.woff') format('woff'),
+        url('GTAmericaTrial-CompressedBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Trial Cm Rg';
+    src: url('GTAmericaTrial-CompressedRegular.eot');
+    src: url('GTAmericaTrial-CompressedRegular.eot?#iefix') format('embedded-opentype'),
+        url('GTAmericaTrial-CompressedRegular.woff') format('woff'),
+        url('GTAmericaTrial-CompressedRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Trial Cm Lg';
+    src: url('GTAmericaTrial-CompressedLight.eot');
+    src: url('GTAmericaTrial-CompressedLight.eot?#iefix') format('embedded-opentype'),
+        url('GTAmericaTrial-CompressedLight.woff') format('woff'),
+        url('GTAmericaTrial-CompressedLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Trial Cm Blk';
+    src: url('GTAmericaTrial-CompressedBlack.eot');
+    src: url('GTAmericaTrial-CompressedBlack.eot?#iefix') format('embedded-opentype'),
+        url('GTAmericaTrial-CompressedBlack.woff') format('woff'),
+        url('GTAmericaTrial-CompressedBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+

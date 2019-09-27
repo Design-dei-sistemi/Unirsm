@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/jquery.vide.js"></script>
     <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -3090,23 +3090,19 @@
                     </div>
                 </div>
                 <div class="container">
-                    <div class="row">
+                    <div class="row" id="terzo-grafico">
                         <div class="two columns"> &nbsp;</div>
 
                         <div class="twelve columns" id="bottoni">
+
                             <script>
-                                var elementPosition = $('#quintobox').offset().top + $('#quintobox').height();
-                                console.log(elementPosition.top);
-                                $(window).scroll(function() {
-                                    if ($(window).scrollTop() < $('#quintobox').offset().top + $('#quintobox').height()) {
-                                        $('#bottoni').css('position', 'fixed').css('display', 'none').css('top', '0');
-                                    }
-                                    if ($(window).scrollTop() > $('#quintobox').offset().top + $('#quintobox').height()) {
-                                        $('#bottoni').css('position', 'fixed').css('display', 'block');
-                                    }
-                                    if ($(window).scrollTop() > $('#quintobox').offset().top + $('#quintobox').height() + 150) {
-                                        $('#bottoni').css('position', 'fixed').css('display', 'none').css('top', '0');
-                                    }
+                                $(document).ready(function() {
+                                    $('#terzo-grafico button').click(function() {
+                                        country = $(this).attr("id");
+                                        //console.log(country);
+                                        $(".paese2#" + country).trigger("click");
+                                    })
+
                                 });
 
                             </script>

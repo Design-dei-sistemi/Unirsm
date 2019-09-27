@@ -108,11 +108,20 @@ p {
     font-size: 18px;
     z-index: 99;
     padding-top: 50px;
+    z-index: 999;
 }
 
 strong {
     color: #EF4647;
     /*rosa scuro*/
+}
+
+a {
+    color: #EF4647;
+}
+
+a:hover {
+    color: #0E0F26;
 }
 
 .paddingcol {
@@ -149,7 +158,7 @@ strong {
     max-width: 750px;
     right: 10%;
     mix-blend-mode: multiply;
-    margin-top: -200px;
+    margin-top: -180px;
 }
 
 #mano4 {
@@ -162,7 +171,7 @@ strong {
 }
 
 #header {
-    height: 100vh;
+    height: 130vh;
     background-color: #FFEDDF;
     /*rosa chiaro*/
     display: flex;
@@ -176,16 +185,12 @@ strong {
     margin: 0 !important;
 }
 
-/*.scrollmagic-pin-spacer {
-    margin: 0 !important;
-}*/
-
 #header h1,
 #header h2 {
     width: 100%;
     margin: 0;
-}
 
+}
 
 
 #header #scroll {
@@ -193,8 +198,9 @@ strong {
     top: 250px;
     left: 0;
     opacity: 1;
-}
 
+
+}
 
 
 #intro {
@@ -206,7 +212,7 @@ strong {
     /*blu navy*/
     position: relative;
     z-index: 0;
-    /*padding-top: 80px;*/
+
 }
 
 #intro p {
@@ -340,7 +346,7 @@ img.mano2sez2 {
     background-size: cover;
     z-index: 3;
     background-color: #FFEDDF;
-    background-image: url("../images/strapposoprablu.svg");
+    background-image: url("../images/strapposopraprof.svg");
 }
 
 #sezione3 h2 {
@@ -367,6 +373,19 @@ img.mano2sez2 {
 
 .fonti {
     font-size: 12px;
+    margin-left: 50px;
+
+
+}
+
+#graficoeuropa .fonti {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+#graficoobiezioni .fonti {
+    margin-left: 0px;
+    margin-top: -150px;
 }
 
 #graficoeu {
@@ -407,12 +426,26 @@ img.mano2sez2 {
 
 #copertura {
     width: 100vw;
-    height: 463px;
+    height: 550px;
     background-color: rgba(255, 237, 223, 1);
     position: relative;
-    top: -463px;
-    margin-bottom: -463px;
+    top: -800px;
+    /* margin-bottom: -463px;*/
     left: 0px;
+
+}
+
+#copert {
+    height: 80vh;
+}
+
+#commentotesto {
+    margin-top: -100px;
+}
+
+#calo h4 {
+    margin-top: -50px;
+
 }
 
 #indicator {
@@ -560,6 +593,10 @@ img.mano2sez2 {
     padding-top: 100px;
 }
 
+#graficoobiezioni h4 {
+    color: #0E0F26;
+}
+
 #storie1 {
     height: 44vh;
     background-repeat: no-repeat;
@@ -608,7 +645,7 @@ img.mano2sez2 {
 
 #manoeq1 {
     position: absolute;
-    top: 0;
+    top: 50px;
     z-index: 3;
     max-width: 650px;
     left: -200px;
@@ -617,7 +654,7 @@ img.mano2sez2 {
 
 #manoeq2 {
     position: absolute;
-    top: 0;
+    top: 50px;
     z-index: 3;
     max-width: 700px;
     left: 500px;
@@ -685,7 +722,7 @@ img.mano2sez2 {
     /*rosa scuro*/
     background-image: url("../images/tipo1.svg");
     z-index: 20;
-    margin-top: 700px;
+    margin-top: 400px;
 }
 
 #dignitastat {
@@ -716,22 +753,21 @@ img.mano2sez2 {
 
 #magic-footer {
     width: 100%;
-    background-color: #FFEDDF;
+    background-color: #0e0f26;
     padding: 60px 20px 60px 20px;
-    border-top: 1px solid #ffd320;
 }
 
-#magic-footer h4 {
+#magic-footer p {
     max-width: 800px;
     margin: auto;
-    color: #ffd320;
+    color: #FFEDDF;
     font-size: 16px;
     text-align: center;
     letter-spacing: 0;
 }
 
 #magic-footer a {
-    color: #ffd320;
+    color: #FFEDDF;
     font-size: 16px;
 }
 
@@ -742,9 +778,4 @@ img.mano2sez2 {
 #slidertest h4 {
     font-size: 26px;
     padding: 0 50px 0;
-}
-
-#graficoobiezioni .fonti {
-    padding: 0 27% 10% 7%;
-    margin-left: 0px;
 }

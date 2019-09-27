@@ -308,6 +308,7 @@ h5 {
     color: var(--rosso_chiaro);
 }
 
+
 #bottoni {
     padding-left: 115px;
     margin-top: 50px;
@@ -322,6 +323,11 @@ h5 {
     /* margin-top: 50px;
   margin-bottom: -50px; */
 }
+
+#terzo-grafico #bottoni {
+    padding-left: 0 !important;
+}
+
 
 @media (width: 800px) {
     h4 {

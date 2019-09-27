@@ -1,0 +1,10 @@
+V ogni giorno in italia con countdown
+V animazione ingresso
+V allinea uomini
+V animazione 9 robe destra sinistra
+V allinea cartina italia
+anima cartina italia
+V rimpicciolisci cartina
+https://design-dei-sistemi.github.io/Unirsm-2019/projects/Cappai/index.html
+https://design-dei-sistemi.github.io/Unirsm-2019/projects/Florio/index.html
+V certo abbiamo... da animare (stile comparsa con waypoint)

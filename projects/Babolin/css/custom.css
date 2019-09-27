@@ -5,12 +5,36 @@
     src: url('../fonts/AmaticSC-Bold.woff')format('woff');
     src: url('../fonts/AmaticSC-Bold.woff2')format('woff');
 
-    font-style: normal;
+    /* font-style: normal; */
+}
+
+#cover {
+    width: 100%;
+    height: 540px;
+    background-color: #D3E9F4;
+    position: absolute;
+}
+#grProd{
+  align-items: center !important;
+}
+
+#chart,
+#chart h5 {
+    text-align: center !important;
+
 }
 
 /* .evidenzia{
   background-color: #b6ffb6;
 } */
+body {
+    background-color: #D3E9F4;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    /* align-items: center; */
+}
+
 .aligned-right {
     text-align: right;
 
@@ -26,32 +50,33 @@ svg {
 }
 
 .wave {
-    width: 110%;
-    margin-top: 10%;
-    margin-left: -3%;
+    width: 100%;
+    margin-top: 5%;
+    margin-left: -1%;
     margin-bottom: -2%;
     padding: 0;
 }
 
-body {
-    background-color: #D3E9F4;
-    width: 100vw;
-    overflow-x: hidden;
-    margin: 0;
-}
+/* .grafico {
+    width: 70%;
 
-/* img #cubo resized{
-  width: auto;
-  height: 100px;
-  overflow: hidden;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: -2%;
+    padding: 0;
 } */
+
+
 #header {
     height: 50vmin;
     display: flex;
     align-items: center;
     text-align: center;
     background-image: url('../SVG/piatto3.svg');
+    /* background-size: 80vh; */
     background-size: contain;
+    /* background-size: 40%; */
     width: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -115,8 +140,47 @@ body {
     font-size: 12vw;
 }
 
+#titolo3 {
+    position: relative;
+    text-align: center;
+    /* font-family: 'IBM Plex Serif Semibold'; */
+    font-family: 'AmaticSC-Bold';
+    font-size: 10vw;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+    margin-top: 8%;
+    margin-bottom: -15%;
+    z-index: 100;
+}
+
+/* h1 #titolo3 {
+  font-size:30vw;
+} */
+#block2 {
+    margin-top: -7%;
+    margin-bottom: 10%;
+}
+
 #intro {
     margin-top: 60px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* #contenitoreGrafico{
+  align-items: center;
+  width:100%;
+}
+
+#graficoUno{
+  width: 150%;
+  margin-left: -20%;
+
+} */
+#introDue {
+    margin-top: 20%;
+    margin-bottom: 1%;
     height: auto;
     display: flex;
     align-items: center;
@@ -141,6 +205,7 @@ h5 {
     font-weight: bold;
     color: #0A3056;
     margin-bottom: 0;
+    margin-top: 10%;
 
 }
 
@@ -150,7 +215,8 @@ p {
     color: black;
 }
 
-#separatoreUno {
+
+.separatoreUno {
     margin-top: -1%;
     width: 100%;
     align-items: center;
@@ -191,7 +257,7 @@ p {
 .vetrini ul li p {
     margin: auto;
     text-align: center;
-    font-size: 90%;
+    font-size: 70%;
     margin-top: 5%;
 
 }
@@ -246,8 +312,8 @@ p {
     color: #0A3056;
 }
 
-#separatoreUno #slogan {
-    padding: 80px;
+.separatoreUno #slogan {
+    padding: 10px;
     text-align: center;
     display: flex;
     align-self: center;
@@ -257,7 +323,7 @@ p {
     color: white;
 }
 
-#separatoreUno #slogan2 {
+.separatoreUno #slogan2 {
     padding: 80px;
     text-align: center;
     display: flex;
@@ -318,7 +384,7 @@ font-size: 30px;
 }
 
 #parteDue p {
-    margin-top: 40px;
+    margin-top: 2%;
     /* display: flex; */
     align-items: center;
 }
@@ -335,22 +401,20 @@ font-size: 30px;
     display: flex;
     align-items: center;
     position: relative;
-    left: 0;
+    left: 5%;
     opacity: 1;
 }
 
 #dichiarazione {
     display: flex;
     width: auto;
-    margin-top: 30px;
-    padding: 50px;
+    margin-top: 10%;
+    padding: 12%;
     float: right;
     font-family: 'AmaticSC-Bold';
     font-size: 1.25em;
     font-weight: bold;
 }
-
-
 
 /* ------------CATENA DEL LAVAGGIO-      PARTE QUATTRO----------------------- */
 #parteQuattro p {
@@ -397,7 +461,7 @@ font-size: 30px;
 }
 
 #mare {
-    top: -12px;
+    top: -15px;
     z-index: -10;
     width: 100%;
     position: relative;
@@ -765,11 +829,19 @@ font-size: 30px;
 }
 
 #separatoreQuattro {
-    margin-top: 120px;
+    /* width: 100%;
+  align-items: center;
+  height: 60%;
+  background-color: #555555; */
+
+    margin-top: -1%;
     width: 100%;
     align-items: center;
-    height: 60%;
-    background-color: #555555;
+    height: 80vh;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    background-color: #1e5799;
 }
 
 #separatoreQuattro #slogan {
@@ -784,8 +856,8 @@ font-size: 30px;
 }
 
 #aiPolitici {
-    margin-left: 4%;
-    margin-top: 1%;
+    margin-left: 10%;
+    margin-top: -30%;
     /* padding: 20px; */
     text-align: left;
     font-family: 'AmaticSC-Bold';
@@ -794,9 +866,9 @@ font-size: 30px;
 }
 
 #greta {
-    text-align: right;
-    margin-right: 4%;
-    margin-bottom: 1%;
+    text-align: left;
+    margin-right: 10%;
+    margin-bottom: -30%;
     font-family: 'AmaticSC-Bold';
     font-size: 1em;
     color: white;
@@ -812,14 +884,25 @@ a {
 }
 
 #fonti {
+    margin-left: 42%;
+    text-align: left;
+    font-family: 'Helvetica', Arial, sans-serif;
     margin-top: 10%;
     font-size: 1.5rem;
 }
 
+#fonti a {
+    font-family: 'Helvetica', Arial, sans-serif;
+    margin-top: 10%;
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+}
+
+
 #footer {
     margin-top: 40px;
     color: black;
-    text-align: right;
+    text-align: center;
 }
 
 #newFooter h4 {
@@ -831,128 +914,86 @@ a {
     font-family: 'Helvetica', Arial, sans-serif;
 }
 
-/* Larger than mobile */
-@media (min-width: 400px) {
-    #titolo1 {
-        margin-top: 30%;
-    }
 
-    #header {
-        height: 50vmin;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        background-image: url('../SVG/piatto3.svg');
-        background-size: contain;
-        /* background-size: 60%; */
-        width: auto;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
 
-    .vetrini ul li {
-        width: 100%;
-    }
 
-    .vetrini ul li .cerchio {
-        width: 30vw;
-        height: 30vw;
-    }
 
-    div #intro .three.columns {
-        width: 0%;
-    }
 
-    div #parteUno .three.columns {
-        width: 0%;
-    }
 
-    #fotoGiugni {
-        width: 100%;
-    }
 
-    .columns seven {
-        width: 40%;
-    }
 
-    #dichiarazione {
-        display: flex;
-        width: auto;
-        margin-top: 10%;
-        padding: 3%;
-        /* float: right; */
-        font-family: 'AmaticSC-Bold';
-        font-size: 1em;
-        font-weight: bold;
-    }
 
-    .centered-box {
-        display: flex;
-        align-items: center;
-        min-height: 225px;
-        max-width: 60%;
-        margin-left: 20%;
-    }
 
-    /* .columns three{
-  width: 50%;
-} */
-}
 
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {
-    #titolo1 {
-        margin-top: 15%;
-    }
 
-    #header {
-        height: 60vmin;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        background-image: url('../SVG/piatto3.svg');
-        background-size: contain;
-        /* background-size: 60%; */
-        width: auto;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    .vetrini ul li {
-        width: 19%;
-    }
-
-    .vetrini ul li .cerchio {
-        width: 14vw;
-        height: 14vw;
-    }
-
-    .three.columns {
-        width: 22%;
-    }
-
-    .six.columns {
-        width: 48%;
-    }
-}
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+@media (max-width: 750px) {
+
     #titolo1 {
-        margin-top: -2%;
+        margin-top: 5%;
     }
 
+    #titolo1 h1 {
+        font-size: 20Vw;
+    }
+
+    #titolo2 h1 {
+        font-size: 20vw;
+    }
+
+    #sottotitolo h2 {
+        font-size: 16vw;
+    }
+
+
+
     #header {
-        height: 55vmin;
+        height: 60vm;
         display: flex;
         align-items: center;
         text-align: center;
         background-image: url('../SVG/piatto3.svg');
-        background-size: contain;
+        background-size: 40vm;
         /* background-size: 60%; */
         width: auto;
         background-repeat: no-repeat;
         background-position: center;
+    }
+
+    .container {
+        width: 90%;
+        /* margin-left: -1%; */
+    }
+
+    .vetrini ul li {
+        list-style-type: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .vetrini ul li .cerchio {
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, .1);
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        width: 22vw;
+        height: 22vw;
+        margin: auto;
+    }
+
+    .vetrini ul li .cerchio img {
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .vetrini ul li p {
+        margin: auto;
+        text-align: center;
+        font-size: 90%;
+        margin-top: 3%;
+        margin-bottom: 5%;
     }
 
     #dichiarazione {
@@ -967,34 +1008,464 @@ a {
     }
 
     div #intro .three.columns {
-        width: 22%;
+        width: 0%;
     }
 
     div #parteUno .three.columns {
-        width: 22%;
+        width: 0%;
+    }
+
+    .four.columns {
+        width: 20;
     }
 
     .columns seven {
         width: 100%;
     }
 
+    /* .three.columns{
+    width: 0%;
+    } */
     .six.columns {
-        width: 48%;
+        width: 100%;
+        padding-right: 5%;
     }
 
     #parteDue columns six p {
         width: 100%;
+        /* margin-right: 5%; */
     }
 
-    /* .centered-box{
-    display: flex;
-    align-items: center;
-    min-height: 225px;
-  } */
+    .centered-box {
+        display: flex;
+        align-items: center;
+        min-height: 150px;
+    }
+
+    #fonti {
+        margin-left: 32%;
+    }
+
+
+
 }
 
+
+
+
+
+
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {
+
+    .container {
+        width: 100%;
+        padding: 8%;
+
+    }
+
+    p {
+        margin-left: 2%;
+    }
+
+    h5 {
+        margin-left: 2%;
+    }
+
+    #titolo1 h1 {
+        margin-top: 10%;
+        font-size: 20Vw;
+    }
+
+    #titolo2 h1 {
+        font-size: 20vw;
+    }
+
+    #sottotitolo h2 {
+        font-size: 16vw;
+    }
+
+    #header {
+        height: 40vm;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-image: url('../SVG/piatto3.svg');
+        background-size: 30vm;
+        /* background-size: 60%; */
+        width: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+    .vetrini ul li {
+        width: 100%;
+    }
+
+    .vetrini ul li .cerchio {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .vetrini ul li .cerchio img {
+        margin: auto;
+        width: auto;
+        height: auto;
+
+        /* margin-left: 15px!important; */
+    }
+
+    .two.columns {
+        width: 0%;
+    }
+
+    .four.columns {
+        width: 20;
+    }
+
+    .six.columns {
+        width: 100%;
+        padding-right: 5%;
+    }
+
+    #parteDue columns six p {
+        width: 100%;
+        /* margin-right: 5%; */
+    }
+
+    p #pUno {
+        margin-left: 20%;
+    }
+
+    h5 {
+        font-weight: bold;
+    }
+
+    div #parteSei row {
+        width: auto;
+    }
+
+    .centered-box {
+        display: flex;
+        align-items: center;
+        min-height: 150px;
+    }
+
+    #fonti {
+        margin-left: 30%;
+    }
+
+
+
+    #fotogiugni {
+
+        width: 40%;
+        display: block;
+        float: none;
+    }
+
+    #dichiarazionegiugni {
+        width: 50%;
+        display: block;
+        float: none;
+    }
+
+
+    .three.columns {
+        width: 70%;
+    }
+
+    .one.columns {
+        width: 10%;
+    }
+
+    #parteDue {
+        /*height: auto;
+  margin-top: 40px;*/
+        /* display: flex; */
+        /*align-items: center;*/
+    }
+
+    #parteSei {
+
+        display: flex;
+
+    }
+
+    #aiPolitici {
+        margin-left: 2%;
+        margin-top: -30%;
+        /* padding: 20px; */
+        text-align: left;
+        font-family: 'AmaticSC-Bold';
+        font-size: 1em;
+        color: white;
+    }
+
+    #greta {
+        text-align: left;
+        margin-right: 2%;
+        margin-bottom: -30%;
+        font-family: 'AmaticSC-Bold';
+        font-size: 1em;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+/* Larger than mobile */
+@media (max-width: 400px) {
+
+    .container {
+        width: 100%;
+        padding: 4%;
+
+    }
+
+    p {
+        margin-left: 2%;
+    }
+
+    h5 {
+        margin-left: 2%;
+    }
+
+    #titolo1 {
+        margin-top: 40%;
+    }
+
+    #titolo1 h1 {
+        font-size: 20Vw;
+    }
+
+    #titolo2 h1 {
+        font-size: 20vw;
+    }
+
+    #sottotitolo h2 {
+        font-size: 16vw;
+    }
+
+    #header {
+        height: 30vm;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-image: url('../SVG/piatto3.svg');
+        background-size: 30vm;
+        width: auto;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .vetrini ul li {
+        width: 100%;
+    }
+
+    .vetrini ul li .cerchio {
+        margin-top: 5%;
+        width: 32vw;
+        height: 32vw;
+    }
+
+    div #intro .three.columns {
+        width: 0%;
+    }
+
+    div #parteUno .three.columns {
+        width: 0%;
+    }
+
+    div #parteDue .three.columns {
+        width: 0%;
+    }
+
+    /* #parteTre img #fotoGiugni{ */
+    /* width: 0%; */
+    /* display:none;
+  } */
+    .columns .seven {
+        width: 40%;
+    }
+
+    #dichiarazione {
+        display: flex;
+        width: auto;
+        margin-top: 10%;
+        padding-left: 2%;
+        padding-right: 0;
+        font-family: 'AmaticSC-Bold';
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .columns three empty {
+        display: none;
+    }
+
+    div .columns one {
+        width: 0%;
+    }
+
+
+    .centered-box {
+        display: flex;
+        align-items: center;
+        min-height: 225px;
+        max-width: 100%;
+        margin-left: 5%;
+    }
+
+    /* .columns three{
+  width: 50%;
+} */
+
+
+    #fotogiugni {
+
+        width: 40%;
+        display: block;
+        float: none;
+    }
+
+    #dichiarazionegiugni {
+        width: 50%;
+        display: block;
+        float: none;
+    }
+
+
+    .three.columns {
+
+        width: 60%;
+    }
+
+    .six.columns {
+        width: 100%;
+    }
+
+    #parteDue {
+        /*height: auto;
+  margin-top: 40px;*/
+        /* display: flex; */
+        /*align-items: center;*/
+    }
+
+    #aiPolitici {
+        margin-left: 2%;
+        margin-top: -70%;
+        /* padding: 20px; */
+        text-align: left;
+        font-family: 'AmaticSC-Bold';
+        font-size: 1em;
+        color: white;
+    }
+
+    #greta {
+        text-align: left;
+        margin-right: 2%;
+        margin-bottom: -70%;
+        font-family: 'AmaticSC-Bold';
+        font-size: 1em;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Larger than desktop */
-@media (min-width: 1000px) {}
+@media (min-width: 1000px) {
+
+    .vetrini ul li {
+        list-style-type: none;
+        display: inline-block;
+        width: 19%;
+    }
+
+    .vetrini ul li .cerchio {
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, .1);
+
+        display: flex;
+        align-items: center;
+        border-radius: 50%;
+        width: 14vw;
+        height: 14vw;
+        margin: auto;
+
+    }
+
+    .vetrini ul li .cerchio img {
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .vetrini ul li p {
+        margin: auto;
+        text-align: center;
+        font-size: 90%;
+        margin-top: 5%;
+
+    }
+
+    /* .three.columns{
+    width: 12%;
+    } */
+
+    .centered-box {
+        display: flex;
+        align-items: center;
+        min-height: 150px;
+    }
+
+    #aiPolitici {
+        margin-left: 3%;
+        margin-top: -30%;
+        /* padding: 20px; */
+        text-align: left;
+        font-family: 'AmaticSC-Bold';
+        font-size: 1em;
+        color: white;
+    }
+
+    #greta {
+        text-align: left;
+        margin-right: 3%;
+        margin-bottom: -30%;
+        font-family: 'AmaticSC-Bold';
+        font-size: 1em;
+        color: white;
+    }
+}
+
 
 /* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    .centered-box {
+        display: flex;
+        align-items: center;
+        min-height: 225px;
+    }
+}
