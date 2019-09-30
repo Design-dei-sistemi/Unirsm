@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="utf-8">
-    <title>METTI UN TITOLO</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Il G7 e il commercio d'armi </title>
+    <meta name="description" content="LA SOCIETÀ CAPITALISTICA E LA MINACCIA PSICOLOGICA DEGLI ARMAMENTI">
+    <meta name="author" content="Daniele Cappai">
     <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,7 +37,14 @@
             <div class="row" id="titolone">
                 <div class="two columns"> &nbsp;</div>
                 <div class="eight columns nomargin">
-                    <h1>PROVA DI TITOLO PER LA MIA PAGINA WEB PER L'ESAME</h1>
+                    <h1>LA SOCIETÀ CAPITALISTICA E LA MINACCIA PSICOLOGICA DEGLI ARMAMENTI</h1>
+                </div>
+                <div class="two columns"> &nbsp;</div>
+            </div>
+            <div class="row">
+                <div class="two columns">&nbsp;</div>
+                <div class="eight columns nomargin">
+                    <h3>di Daniele Cappai</h3>
                 </div>
                 <div class="two columns"> &nbsp;</div>
             </div>
@@ -620,6 +627,7 @@
                             <h2>Categorie di armamenti vendute dal 2000 al 2018</h2>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="two columns"> &nbsp;</div>
                         <div class="twelve columns" id="bottoni2">
@@ -708,6 +716,16 @@
                             </script>
                         </div>
                         <div class="two columns"> &nbsp;</div>
+                    </div>
+                    <div class="row">
+                        <div class="two columns">&nbsp;</div>
+                        <div class="two columns">&nbsp;</div>
+                        <div class="two columns">&nbsp;</div>
+                        <div class="two columns">&nbsp;</div>
+                        <div class="two columns">&nbsp;</div>
+                        <div class="two columns">
+                            <h5>*Fonte Sipri</h5>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="twelve columns">
@@ -2938,12 +2956,9 @@
 
                             <script>
                                 $(document).ready(function() {
-                                    var selectedCategory = "";
-                                    //imposta tutti i paesi a opacità 10%
-                                    //per ogni ".country" cerca tutti i path sottostanti
-                                    //e ne imposta l'opacità a .1
+
                                     $("#category path").each(function() {
-                                        $(this).css("opacity", 0.5);
+                                        $(this).css("opacity", 1);
                                     });
                                     $("#category path").each(function() {
                                         $(this).css("fill", '#ad6f31');
@@ -2951,89 +2966,87 @@
                                     $("#category text").each(function() {
                                         $(this).css("opacity", 1);
                                     });
-                                    $("#category text").each(function() {
-                                        $(this).css("cursor", 'pointer');
-                                    });
+
                                     $("#years text").each(function() {
                                         $(this).css("opacity", 1);
                                     });
-
-
-
-
-
-                                    $(".categoria").click(function() {
-
-                                        if (selectedCategory != $(this).attr("id")) {
-                                            $("#" + selectedCategory).find("path").css({
-
-                                                opacity: 1,
-                                                transition: "opacity 0.5s ease-in-out"
-                                            })
-                                            $("#" + selectedCategory).find("text").css({
-                                                opacity: 1,
-                                                transition: "opacity 0.5s ease-in-out"
-                                            })
-                                            ////memorizza il nome del paese cliccato
-                                            selectedCategory = $(this).attr("id");
-                                            ////////////////
-                                            $(this).find("path").css({
-                                                opacity: 1,
-                                                transition: "opacity 0.5s ease-in-out",
-                                                fill: '#ad6f31'
-                                            })
-                                            $(this).find("text").css({
-                                                opacity: 1,
-                                                transition: "opacity 0.5s ease-in-out",
-
-                                            })
-                                        } else {
-                                            $("#" + selectedCategory).find("path").css({
-                                                opacity: 0.5,
-                                                // fill: 'black',
-                                                transition: "opacity 0.5s ease-in-out"
-
-
-                                            })
-                                            $("#" + selectedCategory).find("text").css({
-                                                opacity: 1,
-                                                transition: "opacity 0.5s ease-in-out"
-                                            })
-                                            selectedCategory = "";
-                                        }
-                                    });
-
-                                    //per ogni path all'interno dell'svg #countries
-                                    //se il mouse è sopra
-                                    $("#category path").hover(
-                                        function() {
-                                            if (selectedCategory === "") {
-                                                //trova l'anno corrispondente al path su cui è il mouse
-                                                year = $(this).attr("class");
-                                                //
-                                                //per tutti gli elementi che appartengono a quell'anno
-                                                $("." + year).css({
-                                                    opacity: 1,
-                                                    transition: "opacity 0.5s ease-in-out"
-                                                })
-                                            }
-                                        },
-                                        function() {
-                                            $("." + year).css({
-                                                opacity: 0.5,
-                                                transition: "opacity 0.5s ease-in-out"
-                                            });
-                                            $("#st0 path").each(function() {
-                                                if ($(this).parent().attr("id") != selectedCategory) {
-                                                    $(this).css({
-                                                        opacity: 0.5,
-                                                        transition: "opacity 0.5s ease-in-out"
-                                                    });
-                                                }
-                                            });
-                                        }
-                                    );
                                 });
+
+
+
+
+                                //     $(".categoria").click(function() {
+                                //
+                                //         if (selectedCategory != $(this).attr("id")) {
+                                //             $("#" + selectedCategory).find("path").css({
+                                //
+                                //                 opacity: 1,
+                                //                 transition: "opacity 0.5s ease-in-out"
+                                //             })
+                                //             $("#" + selectedCategory).find("text").css({
+                                //                 opacity: 1,
+                                //                 transition: "opacity 0.5s ease-in-out"
+                                //             })
+                                //             ////memorizza il nome del paese cliccato
+                                //             selectedCategory = $(this).attr("id");
+                                //             ////////////////
+                                //             $(this).find("path").css({
+                                //                 opacity: 1,
+                                //                 transition: "opacity 0.5s ease-in-out",
+                                //                 fill: '#ad6f31'
+                                //             })
+                                //             $(this).find("text").css({
+                                //                 opacity: 1,
+                                //                 transition: "opacity 0.5s ease-in-out",
+                                //
+                                //             })
+                                //         } else {
+                                //             $("#" + selectedCategory).find("path").css({
+                                //                 opacity: 0.5,
+                                //                 // fill: 'black',
+                                //                 transition: "opacity 0.5s ease-in-out"
+                                //
+                                //
+                                //             })
+                                //             $("#" + selectedCategory).find("text").css({
+                                //                 opacity: 1,
+                                //                 transition: "opacity 0.5s ease-in-out"
+                                //             })
+                                //             selectedCategory = "";
+                                //         }
+                                //     });
+                                //
+                                //     per ogni path all'interno dell'svg #countries
+                                //     se il mouse è sopra
+                                //     $("#category path").hover(
+                                //         function() {
+                                //             if (selectedCategory === "") {
+                                //                 //trova l'anno corrispondente al path su cui è il mouse
+                                //                 year = $(this).attr("class");
+                                //                 //
+                                //                 //per tutti gli elementi che appartengono a quell'anno
+                                //                 $("." + year).css({
+                                //                     opacity: 1,
+                                //                     transition: "opacity 0.5s ease-in-out"
+                                //                 })
+                                //             }
+                                //         },
+                                //         function() {
+                                //             $("." + year).css({
+                                //                 opacity: 0.5,
+                                //                 transition: "opacity 0.5s ease-in-out"
+                                //             });
+                                //             $("#st0 path").each(function() {
+                                //                 if ($(this).parent().attr("id") != selectedCategory) {
+                                //                     $(this).css({
+                                //                         opacity: 0.5,
+                                //                         transition: "opacity 0.5s ease-in-out"
+                                //                     });
+                                //                 }
+                                //             });
+                                //         }
+                                //     );
+                                // });
 
                             </script>
                         </div>
@@ -3094,6 +3107,27 @@
                         <div class="two columns"> &nbsp;</div>
 
                         <div class="twelve columns" id="bottoni">
+                            <script>
+                                $(#bottoni).css("cursor", 'pointer')
+
+                            </script>
+
+                            <script>
+                                var elementPosition = $('#quintobox').offset().top + $('#quintobox').height();
+                                console.log(elementPosition.top);
+                                $(window).scroll(function() {
+                                    if ($(window).scrollTop() < $('#quintobox').offset().top + $('#quintobox').height()) {
+                                        $('#bottoni').css('position', 'fixed').css('display', 'none').css('top', '0');
+                                    }
+                                    if ($(window).scrollTop() > $('#quintobox').offset().top + $('#quintobox').height()) {
+                                        $('#bottoni').css('position', 'fixed').css('display', 'block');
+                                    }
+                                    if ($(window).scrollTop() > $('#quintobox').offset().top + $('#quintobox').height() + 150) {
+                                        $('#bottoni').css('position', 'fixed').css('display', 'none').css('top', '0');
+                                    }
+                                });
+
+                            </script>
 
                             <script>
                                 $(document).ready(function() {
@@ -3117,6 +3151,11 @@
                         <div class="two columns"> &nbsp;</div>
                     </div>
                     <div class="row">
+                        <div class="twelve columns" id="titolo_grafico3">
+                            <h2>Commercio di armamenti nel 2018</h2>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="twelve columns" id="grafico_mondo">
                             <?xml version="1.0" encoding="utf-8"?>
                             <!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -3134,9 +3173,9 @@
                                         display: none;
                                     }
 
-                                    .#dati_it2 {
+                                    /* .#dati_it2 {
                                         display: none;
-                                    }
+                                    } */
 
                                     .#dati_jp2 {
                                         display: none;
@@ -8892,7 +8931,7 @@
                                         $(this).css("opacity", 0);
                                     });
 
-                                    $('#usa2').css("cursor", 'pointer');
+                                    $(".paese2").css("cursor", 'pointer');
                                     $('#jp2').css("cursor", 'pointer');
                                     $('#cn2').css("cursor", 'pointer');
                                     $('#ger2').css("cursor", 'pointer');
@@ -9110,9 +9149,9 @@
     <style>
         #magic-footer {
             margin-top: 50px;
-            background-color: #400DB2;
+            background-color: #1e0000;
             padding: 60px 20px 60px 20px;
-            border-top: 1px solid #ffd320;
+            border-top: 1px solid #d12020;
         }
 
         #magic-footer h4 {
@@ -9120,14 +9159,14 @@
 
             margin: auto;
 
-            color: #ffd320;
+            color: #a00000;
             font-size: 16px;
             text-align: center;
             letter-spacing: 0;
         }
 
         #magic-footer a {
-            color: #ffd320;
+            color: #a00000;
             font-size: 16px;
         }
 
@@ -9137,7 +9176,7 @@
 
     </style>
     <h4>
-        Nome_progetto è un progetto di Daniele Cappai sviluppato all'interno del corso di <a href="https://design-dei-sistemi.github.io/Unirsm-2019/index.html">Design dei sistemi</a> condotto da <a href="http://matteomoretti.com/" target="_blank">Matteo Moretti</a> all'interno della Laurea magistrale in design dell'Università degli studi della Repubblica di San Marino.
+        La società capitalistica e la minaccia psicologica degli armamenti è un progetto di Daniele Cappai sviluppato all'interno del corso di <a href="https://design-dei-sistemi.github.io/Unirsm-2019/index.html">Design dei sistemi</a> condotto da <a href="http://matteomoretti.com/" target="_blank">Matteo Moretti</a> all'interno della Laurea magistrale in design dell'Università degli studi della Repubblica di San Marino.
     </h4>
 </div>
 
