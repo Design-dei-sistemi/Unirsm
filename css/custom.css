@@ -74,13 +74,15 @@ a:hover {
     margin-bottom: 4rem;
 }
 
-#projects h5 {
+#projects h5,
+#footer h5 {
     font-size: 1rem;
     margin-bottom: 3rem;
     letter-spacing: 0.02rem;
 }
 
-#logos {
+#logos,
+#projectas {
     margin-top: 4rem;
     border-top: 1px solid #ffd320;
     text-align: center;
